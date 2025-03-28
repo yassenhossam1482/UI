@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الطلب</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>تفاصيل الطلب</h1>
+    </header>
+    <main>
+        <section id="order-details">
+            <h2>معلومات الطلب</h2>
+            <p id="product-name"></p>
+            <p id="product-price"></p>
+            <form id="order-form">
+                <label for="name">الاسم:</label>
+                <br>
+                <input type="text" id="name" required>
+                <br>
+                <label for="address">العنوان:</label>
+                <br>
+                <input type="text" id="address" required>
+                <br>
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" required>
+                <br>
+                <button type="button" onclick="sendOrder()">إرسال الطلب</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>This website was designed by programmer Yassin Hossam</p>
+
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
